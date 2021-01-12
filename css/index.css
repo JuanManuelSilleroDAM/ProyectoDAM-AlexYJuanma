@@ -1,0 +1,424 @@
+body
+{
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+}
+main
+{
+	min-width: 400px;
+	min-height: 100%;
+}
+header
+{
+	min-height: 160px;
+	max-height: 320px;
+	max-width: 100%;
+	min-width: 400px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Logo
+{
+	width: 150px;
+	height: 150px;
+}
+.enlacesNavLogo
+{
+
+	cursor: pointer;
+}
+nav
+{
+	min-width: 200px;
+	margin: 20px;
+}
+ul
+{
+	padding: 0;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+
+.enlacesNav
+{
+	width: 90px;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: .5s;
+	border-radius: 10px;
+	margin: 5px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+.enlacesNav:hover
+{
+    font-size: 150%;
+	transition: .4s;
+	opacity: .4;
+}
+.enlacesNavLogo:hover
+{
+	transition: .4s;
+	opacity: .8;
+}
+@media screen and (max-width: 1080px)
+{
+	nav, ul {width: 100%;}
+}
+@media screen and (min-width: 1080px)
+{
+	nav, ul {width: 1000px;}
+}
+
+@media screen and (max-width: 610px)
+{
+	.enlacesNavLogo {order: -1;}
+	ul {flex-direction: column;}
+	.Logo {width: 120px; height: 120px;}
+}
+
+
+.slideshow-container {
+	margin: 0;
+  min-width: 400px;
+  height: 40vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+}
+.imagenSlide1
+{background-image: url('../img/subcabecera2.jpg');}
+.imagenSlide2
+{background-image: url('../img/subcabecera1.jpg');}
+.imagenSlide3
+{background-image: url('../img/subcabecera3.jpg');}
+.imagenSlide1, .imagenSlide2, .imagenSlide3
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	width: 100%;
+	min-height: 300px;
+	height: 40vh;
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 15px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 2px 0px 0px 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.puntitos
+{
+	text-align: center;
+	z-index: 1;
+	margin-bottom: 15px;
+}
+
+@-webkit-keyframes fade
+{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade
+{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@media only screen and (max-width: 300px)
+{
+    .prev, .next,.text {font-size: 11px;}
+}
+
+.presentacion
+{
+	min-width: 400px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.textPresent
+{
+	height: 300px;
+	margin: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1
+{
+	display: flex;
+	justify-content: center;
+	font-size: 200%;
+	width: 600px;
+	margin-bottom: 15px;
+}
+p
+{
+	width: 600px;
+
+	display: flex;
+	justify-content: center;
+
+	font-family: 'Cardo', serif;
+	line-height: 25px;
+	text-align: center;
+}
+@media screen and (max-width:610px)
+{
+	h1, p {width: 100%; min-width: 400px;}
+	h1 {font-size: 150%;}
+}
+@media screen and (max-width:500px)
+{
+	h1, p {width: 100%; min-width: 400px;}
+	h1 {font-size: 130%;}
+}
+
+
+.miniGaleria
+{
+	width: 60vw;
+	min-width: 400px;
+	margin-bottom: 100px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.foto1
+{background-image: url('../img/presentacion1.jpg');}
+.foto2
+{background-image: url('../img/Producto10.jpg');}
+.foto3
+{background-image: url('../img/presentacion2.jpg');}
+.foto4
+{background-image: url('../img/Producto4.jpg');}
+.foto5
+{background-image: url('../img/Producto6.jpg');}
+.foto6
+{background-image: url('../img/reservas.jpg');}
+.foto7
+{background-image: url('../img/Producto7.jpg');}
+.foto8
+{background-image: url('../img/Producto8.jpg');}
+.foto1,.foto2,.foto3,.foto4,.foto5,.foto6,.foto7,.foto8
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	width: 320px;
+	height: 200px;
+	margin: 10px;
+
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 2270px) {
+	.foto4,.foto8 {display: none;}
+}
+@media screen and (max-width: 1699px) {
+	.foto4,.foto8 {display: flex;}
+}
+@media screen and (max-width: 1135px) {
+	.miniGaleria {width: 80vw;}
+}
+@media screen and (max-width: 850px) {
+	.miniGaleria {width: 700px;}
+}
+@media screen and (max-width: 700px) {
+	.miniGaleria
+	{
+		width: 100vw;
+		height: 70vh;
+		justify-content: space-between;
+	}
+	.foto1,.foto2,.foto3,.foto4,.foto5,.foto6,.foto7,.foto8
+	{
+		margin: 0;
+		width: 49vw;
+		height: 15vh;
+	}
+}
+.empleados
+{
+	background-image: url('../img/recorteEmpleado2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+
+	height: 450px;
+	width: 100%;
+}
+
+
+footer
+{
+	border-top: double black;
+	display: flex;
+	justify-content: center;
+
+	min-width: 400px;
+	height: auto;
+}
+.Datos
+{
+	color: white;
+	background-color: #170B07;
+	padding-bottom: 60px;
+
+	width: auto;
+	min-width: 400px;
+	height: auto;
+	min-height: 350px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.enlacesFooter
+{
+	padding: 20px;
+	padding-bottom: 70px;
+	height: auto;
+	width: auto;
+
+}
+.fondo11
+{
+	height: auto;
+	width: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.fondo1sec ul
+{
+	width: 180px;
+
+	margin: 30px;
+
+	display: flex;
+	align-items: flex-start;
+}
+
+.fondo1sec ul h3
+{
+	width: 160px;
+	justify-content: flex-start;
+}
+.fondo1sec ul li
+{
+	width: 160px;
+	justify-content: flex-start;
+}
+.enlaceFooter
+{
+	color: white;
+	text-decoration: none;
+}
+.enlaceFooter:hover
+{
+	text-decoration: underline;
+}
+.contenedorCopy
+{
+	margin-left: 70px;
+	margin-right: 70px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap-reverse;
+}
+.copyAlex
+{
+	width: 200px;
+	height: 20px;
+}

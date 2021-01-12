@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link href="../css/index.css" rel="stylesheet" media="all" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<main>
+			<header>
+                <nav>
+                    <ul>
+                        <li class="enlacesNav">Galería</li>
+                        <li class="enlacesNav">Reservas</li>
+                        <li class="enlacesNavLogo"><img class="Logo" src="../img/recorteLogo.png"></li>
+                        <li class="enlacesNav">Ubicación</li>
+                        <li class="enlacesNav">Carta</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <div class="imagenSlide1">
+                                <div class="puntitos">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+                            </div>
+                        <div class="text">Comedor</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <div class="imagenSlide2">
+                                <div class="puntitos">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+                            </div>
+                        <div class="text">Terraza</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <div class="imagenSlide3">
+                                <div class="puntitos">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+                            </div>
+                        <div class="text">Tejado</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="presentacion">
+                    <article class="textPresent">
+                        <h1>ALTA COCINA AL ESTILO ALICANTINO</h1>
+                        <p>Texto de presentacion y saludo tipo: Bienvenido al restaurante Sweetish House Mafia, donde ofrecemos una experiencia gastronómica única con el sabor único de la cocina mediterranea. Ya sea que esté aquí para un almuerzo o cena de negocios, celebrando una ocasión especial o buscando un ambiente romántico para una cita, nuestro menú ofrece algo para todos.</p>
+                    </article>
+                    <div class="miniGaleria">
+                        <div class="foto1"></div>
+                        <div class="foto2"></div>
+                        <div class="foto3"></div>
+                        <div class="foto4"></div>
+                        <div class="foto5"></div>
+                        <div class="foto6"></div>
+                        <div class="foto7"></div>
+                        <div class="foto8"></div>
+                    </div>
+                </div>
+
+                <div class="empleados">
+
+                </div>
+            </section>
+
+            <footer>
+                <div class="Datos">
+                    <div class="enlacesFooter">
+                        <div class="fondo11">
+        					<div class="fondo1sec">
+        						<ul>
+        							<h3>QUIENES SOMOS</h3>
+        							<li><a class="enlaceFooter" href="#">Condiciones de uso</a> </li>
+        							<li><a class="enlaceFooter" href="#">Socios y proveedores</a> </li>
+        							<li><a class="enlaceFooter" href="#">Afiliados</a> </li>
+        							<li><a class="enlaceFooter" href="#">Aviso legal</a> </li>
+        							<li><a class="enlaceFooter" href="#">Privacidad</a> </li>
+        						</ul>
+        					</div>
+                            <div class="fondo1sec">
+        						<ul>
+        							<h3>CONTACTAR</h3>
+        							<li><a class="enlaceFooter" href="#">Contacto</a></li>
+        							<li><a class="enlaceFooter" href="#">Centro de soporte</a> </li>
+        							<li><a class="enlaceFooter" href="#">Opina y gana</a> </li>
+        							<li><a class="enlaceFooter" href="#">Nuestro equipo</a></li>
+        							<li><a class="enlaceFooter" href="#">Trabaja con nosotros</a> </li>
+        						</ul>
+        					</div>
+        					<div class="fondo1sec">
+        						<ul>
+        							<h3>OTROS</h3>
+        							<li><a class="enlaceFooter" href="#">Smarthome</a> </li>
+        							<li><a class="enlaceFooter" href="#">Realidad virtual</a> </li>
+        							<li><a class="enlaceFooter" href="#">Powered by Balmis</a></li>
+        							<li><a class="enlaceFooter" href="#">Solidaridad</a></li>
+        							<li><a class="enlaceFooter" href="#">Centros educativos</a></li>
+        							<li><a class="enlaceFooter" href="#">Politica de cookies</a> </li>
+        						</ul>
+        					</div>
+        				</div>
+                    </div>
+                    <div class="contenedorCopy">
+                        <label class="copyAlex">&copy B. Alexander Mota</label>
+                        <div class="copyAlex"></div>
+                        <div class="copyAlex"></div>
+                    </div>
+                </div>
+            </footer>
+		</main>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+
+*Punto 4 doc: Objetivos*
+1.- diseñar y maquetar cinco paginas orientadas a ofrecer servicios relativos a un restaurante. Estas seran: 
+	-el index, desde el que se accede a todas las demas.
+	-la galeria, la cual aporta informacion en texto y fotos sobre el local o esteticas de los locales
+	-reservas, para que los clientes puedan solicitar mesa u organizar eventos
+	-ubicacion, aporta informacion de la localizacion y contacto con el local
+	-carta, sale informacion completa sobre platos y menus
+
+2.- cumplir con los requerimientos minimos especificados en el propio proyecto:
+	-alojar el sitio en un servidor de github
+	-hacer las respectivas pruebas y aportar pruebas graficas de ello
+	-validar el sitio para html5
+	-comprobar que funciona correctamente en los principales navegadores y resoluciones
+
+*Punto 5 doc: Descripcion del proyecto*
+1.- El proyecto se compone por cinco paginas. De las cuales, todas deben compartir un mismo footer y todas salvo el index deben compartir un mismo header.
+La idea principal para el diseño del sitio, es la vista paronamica de los monitores: queremos que en todo momento la pantalla se sienta llena pero sin saturar.
+Con el contenido bien espaciado. El color predominante es el blanco, lo cual parece ser una constante en este sector. A parte tambien incluiremos algunos tonos marrones 
+para algunios elementos de la pagina y algunos colores frios tipo blanco o azul para resaltar algunos botones al pasar el raton. Se busca un diseño elegante y minimalista.
+La inspiracion principal para disponer los elementos de la pagina sale de la web Via Reál (viareal.com). Me parecio un buen reto ya que la empresa que la diseño tiene
+bastante nombre con clientes como AT&T o Microsoft.
+
+*Punto 6 doc: reparto de tareas*
+Por mi parte me ha tocado encargarme de:
+	-las paginas index, ubicacion y carta
+	-la imagen general del sitio
+	-proponer el nombre del sitio
+	-la paleta de colores
+	-comunicacion (mail de google y discord) 
+Por la del compañero:
+	-las paginas galeria y reserva
+	-proponer cambios al nombre del restaurante
+	-logotipo del sitio
+	-GitHub
+
+*Punto 7 doc: Planificacion*
+	-dias 1 a 3: dejar bien cerrado el tema de github para poder empezar a guardar el proyecto por versiones (al final no pudimos organizar bien la plataforma y nos
+supuso un retraso bastante grande)
+	-dia 4 a 5: decidir colores, nombre y logo. (debido al retraso con github, con esto empezamos el dia 28 de diciembre)
+	-dia 6 hasta 8 de enero: desarrolar las partes basandonos en un ejercicio mio de clase. (Al final no me gusto y lo cambie por algo mas parecido a la web viareal.com
+Contamos con menos tiempo del esperado para hacer lo grueso de la maquetacion pero alargue mis horas para hacerlo y a dia 11 de enero, mi parte del proyecto esta casi acabada)
+	-9 a 11 de enero: repasar el codigo en busca de errores para consultar con Carmen (Al final este ha sido un proceso que he hecho de forma continua, lo que realmente
+hare estos dias es acabar el index y ya entonces repasare el codigo)
+	-11 a 14 de enero: Consultar posibles cambios o mejoras con carmen y direccionar las partes caoticas del proyecto como el git o el alojamiento del sitio en un servidor
+	-15 hasta fin: aplicar los cambios propuestos y cumplir con los puntos que falten 
+
+*Punto 8 doc: Desarrollo*
+no entiendo que se hace aqui
+
+*Punto 9 doc: Pruebas*
+adjuntar capturas con pruebas de funcionamiento
+
+*Punto 10 doc: Problemas y sus soluciones*
