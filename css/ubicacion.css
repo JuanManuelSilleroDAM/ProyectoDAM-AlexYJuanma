@@ -26,7 +26,6 @@ header
 }
 .enlacesNavLogo
 {
-
 	cursor: pointer;
 }
 nav
@@ -84,17 +83,14 @@ ul
 {
 	nav, ul {width: 1000px;}
 }
-
 @media screen and (max-width: 610px)
 {
 	.enlacesNavLogo {order: -1;}
-	ul {
-		flex-direction: column;
-	}
+	ul {flex-direction: column;}
 	.Logo
 	{
-			width: 120px;
-			height: 120px;
+		width: 120px;
+		height: 120px;
 	}
 }
 
@@ -157,6 +153,7 @@ section
 .contacto
 {
 	width: 100%;
+
 	display: flex;
 	justify-content: center;
 }
@@ -203,13 +200,13 @@ legend
 	height: 50px;
 	margin: 20px;
 	transition: .5s;
-	opacity: .5;
 	font-weight: bolder;
+    background: #170B07;
 }
 .Dardealta:hover
 {
 	transition: 1s;
-    background: rgb(60,167,227);
+	opacity: .5;
 }
 .Celda
 {
@@ -220,11 +217,10 @@ legend
 }
 .celdaGrande
 {
-
-		border: 1px solid black;
-		width: 300px;
-		height: 100px;
-		margin: 20px;
+	border: 1px solid black;
+	width: 300px;
+	height: 100px;
+	margin: 20px;
 }
 .datosContacto
 {
