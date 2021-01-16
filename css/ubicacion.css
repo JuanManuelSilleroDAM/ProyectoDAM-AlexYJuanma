@@ -324,6 +324,7 @@ legend
 }
 .ubi
 {
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -333,39 +334,36 @@ legend
 {
 	width: 100vw;
 	height: 40vh;
+	min-height: 400px;
 	opacity: .7;
 }
+
+
 footer
 {
 	border-top: double black;
+
 	display: flex;
 	justify-content: center;
 
-	min-width: 500px;
+	width: 100%;
+	min-width: 400px;
 	height: auto;
 }
 .Datos
 {
 	color: white;
 	background-color: #170B07;
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 
 	width: auto;
-	min-width: 500px;
+	min-width: 400px;
 	height: auto;
 	min-height: 350px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-.enlacesFooter
-{
-	padding: 20px;
-	padding-bottom: 70px;
-	height: auto;
-	width: auto;
-
 }
 .fondo11
 {
@@ -397,10 +395,19 @@ footer
 	width: 160px;
 	justify-content: flex-start;
 }
+.enlacesFooter
+{
+	padding: 20px;
+	padding-bottom: 50px;
+	height: auto;
+	width: auto;
+
+}
 .enlaceFooter
 {
 	color: white;
 	text-decoration: none;
+	line-height: 25px;
 }
 .enlaceFooter:hover
 {
@@ -420,5 +427,4 @@ footer
 {
 	width: 200px;
 	height: 20px;
-
 }
