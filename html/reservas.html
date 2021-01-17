@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reservas</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link href="../css/reservas.css" rel="stylesheet" media="all" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <li class="enlacesNav">Galería</li>
+                        <li class="enlacesNav">Reservas</li>
+                        <li class="enlacesNavLogo"><img class="Logo" src="../img/recorteLogo.png"></li>
+                        <li class="enlacesNav">Ubicación</li>
+                        <li class="enlacesNav">Carta</li>
+                    </ul>
+                </nav>
+            </header>
+
+        <body>
+            <section>
+                <form method="post">
+                    <fieldset>
+                        <legend>
+                            <h3>Reservas</h3>
+                        </legend>
+                        <div class='Fila'>
+                            <label class='Celda'> Correo electronico del cliente: </label>
+                            <input class='Celda' type="email" placeholder="Correo electrónico" required />
+                        </div>
+                        <p> </p>
+                        <div class='Fila'>
+                            <label class='Celda'> Nombre del solicitante: </label>
+                            <input class='Celda' type="" required />
+                            <!--campo requerido?-->
+                        </div>
+                        <p> </p>
+                        <div class='Fila'>
+                            <label class='Celda'>Teléfono: </label>
+                            <input class='Celda' type=" tel" required />
+                        </div>
+                        <p> </p>
+                        <div class='Fila'>
+                            <label class='Celda'> Número de adultos: </label>
+                            <input class='Celda' type="number" required />
+                        </div>
+                        <p> </p>
+                        <div class="Fila">
+                            <label class="Celda">Número de niños: </label>
+                            <input class="Celda" type="number">
+                        </div>
+                        <p> </p>
+                        <div class="Fila">
+                            <label class="Celda">Parking</label>
+                            <input class='Celda' type="checkbox">
+                        </div>
+                        <p> </p>
+                        <div class="tooltip">
+                            <input class="Reservar" type="submit" value="Reservar" />
+                        </div>
+                    </fieldset>
+                    <div>
+                        <h2>¿Cómo llegar?</h2>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19571350.818695012!2d-38.45251878663687!3d72.57859850902783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1609839212599!5m2!1ses!2ses"
+                        width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
+                    <p> </p>
+                   
+                    <footer>
+                        <div class="Datos">
+                            <div class="enlacesFooter">
+                                <div class="fondo11">
+                                    <div class="fondo1sec">
+                                        <ul>
+                                            <h3>QUIENES SOMOS</h3>
+                                            <li><a class="enlaceFooter" href="#">Condiciones de uso</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Socios y proveedores</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Afiliados</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Aviso legal</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Privacidad</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fondo1sec">
+                                        <ul>
+                                            <h3>CONTACTAR</h3>
+                                            <li><a class="enlaceFooter" href="#">Contacto</a></li>
+                                            <li><a class="enlaceFooter" href="#">Centro de soporte</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Opina y gana</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Nuestro equipo</a></li>
+                                            <li><a class="enlaceFooter" href="#">Trabaja con nosotros</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fondo1sec">
+                                        <ul>
+                                            <h3>OTROS</h3>
+                                            <li><a class="enlaceFooter" href="#">Smarthome</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Realidad virtual</a> </li>
+                                            <li><a class="enlaceFooter" href="#">Powered by Balmis</a></li>
+                                            <li><a class="enlaceFooter" href="#">Solidaridad</a></li>
+                                            <li><a class="enlaceFooter" href="#">Centros educativos</a></li>
+                                            <li><a class="enlaceFooter" href="#">Politica de cookies</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contenedorCopy">
+                                <label class="copyAlex">&copy B. Alexander Mota &
+                                </br> J. Manuel Sillero</label>
+                                <div class="copyAlex"></div>
+                                <div class="copyAlex"></div>
+                            </div>
+                        </div>
+                    </footer>
+                </form>
+            </section>
+        </body>
