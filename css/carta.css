@@ -65,6 +65,7 @@ ul
 
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-size: 100%;
 }
 .enlacesNav:hover
@@ -72,6 +73,10 @@ ul
     font-size: 150%;
 	transition: .4s;
 	opacity: .4;
+}
+.enlacesNav:visited
+{
+	color: #170B07;
 }
 .enlacesNavLogo:hover
 {
@@ -188,7 +193,7 @@ p
 	transition: 1s;
     opacity: 0.8;
 }
-@media screen and (max-width: 499px)
+@media screen and (max-width: 550px)
 {
 	.leyendaCabecera,.fondoLeyendaCabecera
 	{ width: 400px; }

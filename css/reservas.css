@@ -30,6 +30,36 @@ header {
 	cursor: pointer;
 }
 
+.enlacesNav
+{
+	width: 90px;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: .5s;
+	border-radius: 10px;
+	margin: 5px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+.enlacesNav:hover
+{
+    font-size: 150%;
+	transition: .4s;
+	opacity: .4;
+}
+.enlacesNav:visited
+{
+	color: #170B07;
+}
 nav {
 	min-width: 200px;
 	margin: 20px;

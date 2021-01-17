@@ -63,6 +63,7 @@ ul
 
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-size: 100%;
 }
 .enlacesNav:hover
@@ -70,6 +71,10 @@ ul
     font-size: 150%;
 	transition: .4s;
 	opacity: .4;
+}
+.enlacesNav:visited
+{
+	color: #170B07;
 }
 .enlacesNavLogo:hover
 {
@@ -166,7 +171,7 @@ ul
     opacity: 0.8;
 }
 
-@media screen and (max-width: 499px)
+@media screen and (max-width: 550px)
 {
 	.leyendaCabecera,.fondoLeyendaCabecera
 	{ width: 400px; }
@@ -279,9 +284,7 @@ ul
     to {opacity: 1;}
 }
 @media only screen and (max-width: 300px)
-{
-    .prev, .next,.text {font-size: 11px;}
-}
+{ .prev, .next,.text {font-size: 11px;} }
 
 .presentacion
 {
@@ -319,17 +322,18 @@ h1
 
 	font-family: 'Cardo', serif;
 	line-height: 25px;
-	text-align: center;
+	text-align: justify;
 }
 @media screen and (max-width:610px)
 {
-	h1, .presentacionGrande {width: 100%; min-width: 400px;}
-	h1 {font-size: 150%;}
+	h1, .presentacionGrande { min-width: 400px;}
+	.presentacionGrande {width: 80%; }
+	h1 {font-size: 150%; width: 100%;}
 }
 @media screen and (max-width:500px)
 {
 	h1 {width: 100%; min-width: 400px;}
-	.presentacionGrande {width: 100%; min-width: 300px;}
+	.presentacionGrande {width: 80%; min-width: 300px;}
 	h1 {font-size: 130%;}
 }
 .miniGaleria
@@ -377,13 +381,25 @@ h1
 @media screen and (max-width: 2266px) {
 	.foto4,.foto8 {display: none;}
 }
-@media screen and (max-width: 1699px) {
-	.miniGaleria {width: 1000px; }
+@media screen and (min-width: 1700px) {
+	.FondoContLeyEmpl,.ContLeyEmpl
+	{ margin-left: 23vw; }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1699px) {
+	.miniGaleria {width: 850px; }
+	.FondoContLeyEmpl,.ContLeyEmpl
+	{ margin-left: 23vw; }
+}
+@media screen and (max-width: 1250px) {
+	.FondoContLeyEmpl,.ContLeyEmpl
+	{
+		margin-left: 15vw;
+	}
+}
+@media screen and (max-width: 900px) {
 	.miniGaleria {width: 700px;}
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
 	.miniGaleria
 	{
 		width: 100%;
@@ -396,16 +412,65 @@ h1
 		width: 49%;
 		height: 32%;
 	}
+	.FondoContLeyEmpl,.ContLeyEmpl
+	{ margin-left: 0vw; }
+	.empleados {justify-content: center;}
 }
 .empleados
 {
 	background-image: url('../img/recorteEmpleado2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top;
+	background-position: center;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 
 	height: 450px;
 	width: 100%;
+}
+.FondoContLeyEmpl,.ContLeyEmpl
+{
+	z-index: 1;
+	position: absolute;
+	align-self: center;
+
+	width: 460px;
+	height: 20vh;
+	min-height: 300px;
+
+}
+.FondoContLeyEmpl
+{
+	background-color: white;
+	opacity: 0.35;
+}
+.ContLeyEmpl
+{
+	background-color: transparent;
+	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tituloLeyendaEmpleados
+{
+	font-size: 200%;
+	margin: 20px;
+	font-weight: bold;
+}
+.leyendaEmpleados
+{
+	max-width: 320px;
+	font-family: 'Cardo', serif;
+	margin: 30px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	line-height: 25px;
+	text-align: justify;
 }
 
 footer
