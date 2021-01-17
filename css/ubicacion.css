@@ -120,8 +120,11 @@ section
 }
 .fondoLeyendaCabecera
 {
+	z-index: 1;
+	position: absolute;
+	align-self: center;
 
-	width: 400px;
+	width: 460px;
 	height: 20vh;
 	min-height: 300px;
 
@@ -131,11 +134,12 @@ section
 }
 .leyendaCabecera
 {
+	align-self: center;
 	background-color: transparent;
-	z-index: 1;
+	z-index: 2;
 	position: absolute;
 
-	width: 400px;
+	width: 460px;
 	height: 20vh;
 	min-height: 300px;
 
@@ -144,11 +148,50 @@ section
 	align-items: center;
 	justify-content: center;
 }
-.etiquetaCarta
+.etiquetaCarta,.etiquetaCarta2
 {
 	font-size: 275%;
 	margin: 20px;
 	font-weight: bold;
+}
+.etiquetaCarta2
+{
+	display: none;
+}
+
+p
+{
+	max-width: 320px;
+	font-family: 'Cardo', serif;
+	margin: 40px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	line-height: 25px;
+	text-align: center;
+}
+.Dardealta
+{
+	cursor: pointer;
+	color: white;
+	border: none;
+	background-color: #170B07;
+	width: 160px;
+	height: 40px;
+	transition: .3s;
+}
+.Dardealta:hover
+{
+	transition: 1s;
+    opacity: 0.8;
+}
+@media screen and (max-width: 499px)
+{
+	.leyendaCabecera,.fondoLeyendaCabecera
+	{ width: 400px; }
+	.etiquetaCarta
+	{ display: none; }
+	.etiquetaCarta2
+	{ display: inline; }
 }
 .contacto
 {
@@ -191,7 +234,7 @@ legend
 		margin: 20px;
 		font-weight: bold;
 }
-.Dardealta
+.Dardealta2
 {
 	color: white;
 	border: none;
@@ -203,7 +246,7 @@ legend
 	font-weight: bolder;
     background: #170B07;
 }
-.Dardealta:hover
+.Dardealta2:hover
 {
 	transition: 1s;
 	opacity: .5;

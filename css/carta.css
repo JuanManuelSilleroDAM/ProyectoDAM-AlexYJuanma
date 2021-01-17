@@ -124,8 +124,11 @@ section
 }
 .fondoLeyendaCabecera
 {
+	z-index: 1;
+	position: absolute;
+	align-self: center;
 
-	width: 400px;
+	width: 460px;
 	height: 20vh;
 	min-height: 300px;
 
@@ -135,11 +138,12 @@ section
 }
 .leyendaCabecera
 {
+	align-self: center;
 	background-color: transparent;
-	z-index: 1;
+	z-index: 2;
 	position: absolute;
 
-	width: 400px;
+	width: 460px;
 	height: 20vh;
 	min-height: 300px;
 
@@ -148,14 +152,20 @@ section
 	align-items: center;
 	justify-content: center;
 }
-.etiquetaCarta
+.etiquetaCarta,.etiquetaCarta2
 {
 	font-size: 275%;
 	margin: 20px;
 	font-weight: bold;
 }
+.etiquetaCarta2
+{
+	display: none;
+}
+
 p
 {
+	max-width: 320px;
 	font-family: 'Cardo', serif;
 	margin: 40px;
 	margin-top: 0px;
@@ -177,6 +187,15 @@ p
 {
 	transition: 1s;
     opacity: 0.8;
+}
+@media screen and (max-width: 499px)
+{
+	.leyendaCabecera,.fondoLeyendaCabecera
+	{ width: 400px; }
+	.etiquetaCarta
+	{ display: none; }
+	.etiquetaCarta2
+	{ display: inline; }
 }
 .carta
 {
