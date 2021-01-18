@@ -9,7 +9,8 @@ main {
 	min-height: 100vh;
 }
 
-header {
+header
+{
 	min-height: 160px;
 	max-height: 320px;
 	max-width: 100%;
@@ -19,17 +20,32 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
-.Logo {
+.Logo
+{
 	width: 150px;
 	height: 150px;
 }
-
-.enlacesNavLogo {
+.enlacesNavLogo
+{
 
 	cursor: pointer;
 }
-
+nav
+{
+	width: 1000px;
+	margin: 20px;
+}
+ul
+{
+	padding: 0;
+	width: 1000px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
 .enlacesNav
 {
 	width: 90px;
@@ -48,6 +64,7 @@ header {
 
 	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-size: 100%;
 }
 .enlacesNav:hover
@@ -60,82 +77,22 @@ header {
 {
 	color: #170B07;
 }
-nav {
-	min-width: 200px;
-	margin: 20px;
-}
-
-ul {
-	padding: 0;
-	margin: 0px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	list-style-type: none;
-}
-
-.enlacesNav {
-	width: 90px;
-	height: 30px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	transition: .5s;
-	border-radius: 10px;
-	margin: 5px;
-
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 100%;
-}
-
-.enlacesNav:hover {
-	font-size: 150%;
-	transition: .4s;
-	opacity: .4;
-}
-
-.enlacesNavLogo:hover {
+.enlacesNavLogo:hover
+{
 	transition: .4s;
 	opacity: .8;
 }
-
-@media screen and (max-width: 1080px) {
-
-	nav,
-	ul {
-		width: 100%;
-	}
+@media screen and (max-width: 1080px)
+{
+	nav, ul {width: 100%;}
+}
+@media screen and (max-width: 610px)
+{
+	.lilogo {order: -1;}
+	ul {flex-direction: column;}
+	.Logo {width: 120px; height: 120px;}
 }
 
-@media screen and (min-width: 1080px) {
-
-	nav,
-	ul {
-		width: 1000px;
-	}
-}
-
-@media screen and (max-width: 610px) {
-	.enlacesNavLogo {
-		order: -1;
-	}
-
-	ul {
-		flex-direction: column;
-	}
-
-	.Logo {
-		width: 120px;
-		height: 120px;
-	}
-}
 
 body {
 	font-family: c;

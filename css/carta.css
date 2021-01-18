@@ -28,7 +28,6 @@ header
 }
 .enlacesNavLogo
 {
-
 	cursor: pointer;
 }
 nav
@@ -94,14 +93,12 @@ ul
 
 @media screen and (max-width: 610px)
 {
-	.enlacesNavLogo {order: -1;}
-	ul {
-		flex-direction: column;
-	}
+	.lilogo {order: -1;}
+	ul { flex-direction: column; }
 	.Logo
 	{
-			width: 120px;
-			height: 120px;
+		width: 120px;
+		height: 120px;
 	}
 }
 

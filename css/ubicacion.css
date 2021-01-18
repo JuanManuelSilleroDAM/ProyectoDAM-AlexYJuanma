@@ -90,7 +90,7 @@ ul
 }
 @media screen and (max-width: 610px)
 {
-	.enlacesNavLogo {order: -1;}
+	.lilogo {order: -1;}
 	ul {flex-direction: column;}
 	.Logo
 	{
